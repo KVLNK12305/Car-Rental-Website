@@ -136,16 +136,6 @@ header {
     margin: 0.5rem 0 1rem;
 }
 
-.app-stores {
-    display: flex;
-}
-
-.app-stores img {
-    width: 100px;
-    margin-right: 1rem;
-    cursor: pointer;
-}
-
 /* location, pickup, drop date, and submit */
 .form-container form {
     display: flex;
@@ -250,7 +240,7 @@ header {
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--main-color);
-    margin: 0.2rem 0 0.5rem;
+    margin: 0.2rem 0 0.5rem;   /*(Top Bottom) Left Right*/ 
 }
 
 .services-container .box h2 span {
@@ -352,42 +342,6 @@ header {
 .reviews-container .box .stars .bx {
     color: var(--main-color);
 }
-
-/* Newsletter Section */
-.ride-container {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.ride-container .box {
-    text-align: center;
-    padding: 20px;
-}
-
-.ride-container .box .bx {
-    font-size: 34px;
-    padding: 10px;
-    background: #eeeff1;
-    border-radius: 0.5rem;
-    color: var(--main-color);
-}
-
-.ride-container .box h2 {
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin: 1.4rem 0 0.5rem;
-}
-
-.ride-container .box .bx:hover,
-.ride-container .bx .bxs-calendar-check {
-    background-color: var(--gradient);
-    color: #474fa0;
-    background: #eeeff1;
-}
-
 
 /* Copyright Section */
 .copyright {
