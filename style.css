@@ -384,7 +384,8 @@ header {
 .ride-container .box .bx:hover,
 .ride-container .bx .bxs-calendar-check {
     background-color: var(--gradient);
-    color: rgb(31, 180, 173);
+    color: #474fa0;
+    background: #eeeff1;
 }
 
 
