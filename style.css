@@ -109,7 +109,7 @@ header {
     background: var(--main-color);
 }
 
-/* home sections, play store apple store button */
+/* home sections */
 .home {
     width: 100%;
     min-height: 100vh;
