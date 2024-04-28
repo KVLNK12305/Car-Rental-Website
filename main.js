@@ -15,13 +15,13 @@ form.addEventListener('submit', e => {
     .catch(error => console.error('Error!', error.message))
 
 // ScollReveal Animation
-ScollReveal().reveal('.text',{delay:200,origin:'top'});
-ScollReveal().reveal('.form-container form',{delay:800,origin:'left'});
-ScollReveal().reveal('.heading',{delay:800,origin:'top'});
-ScollReveal().reveal('.ride-container .box',{delay:600,origin:'top'});
-ScollReveal().reveal('.services-container .box',{delay:600,origin:'top'});
-ScollReveal().reveal('.about-container .box',{delay:600,origin:'top'});
-ScollReveal().reveal('.reviews-container',{delay:600,origin:'top'});
+ScrollReveal().reveal('.text',{delay:200,origin:'top'});
+ScrollReveal().reveal('.form-container form',{delay:800,origin:'left'});
+ScrollReveal().reveal('.heading',{delay:800,origin:'top'});
+ScrollReveal().reveal('.ride-container .box',{delay:600,origin:'top'});
+ScrollReveal().reveal('.services-container .box',{delay:600,origin:'top'});
+ScrollReveal().reveal('.about-container .box',{delay:600,origin:'top'});
+ScrollReveal().reveal('.reviews-container',{delay:600,origin:'top'});
 
 /* Making responsive */
 let menu=document.querySelector('#menu-icon');
@@ -33,6 +33,6 @@ menu.onclick=()=>{
 }
 
 window.onscroll=()=>{
-    menu.classList.remove( 'bx-x' );
+    menu.classList.remove('bx-x');
     navbar.classList.remove('active');
 }
