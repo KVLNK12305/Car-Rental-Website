@@ -474,9 +474,6 @@ header {
     .copyright{
         flex-direction: column;
     }
-    .newsletter .box{
-        width: 284px;
-    }
     .form-container{
         padding-top: 2rem;
     }

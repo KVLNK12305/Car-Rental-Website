@@ -22,7 +22,6 @@ ScollReveal().reveal('.ride-container .box',{delay:600,origin:'top'});
 ScollReveal().reveal('.services-container .box',{delay:600,origin:'top'});
 ScollReveal().reveal('.about-container .box',{delay:600,origin:'top'});
 ScollReveal().reveal('.reviews-container',{delay:600,origin:'top'});
-ScollReveal().reveal('.newsletter .box',{delay:400,origin:'bottom'});
 
 /* Making responsive */
 let menu=document.querySelector('#menu-icon');
