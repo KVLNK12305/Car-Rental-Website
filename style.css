@@ -384,6 +384,6 @@ header {
 .ride-container .bx .bx-map,
 .ride-container .bx .bxs-calendar-check,
 .ride-container .bx .bxs-car{
-    background-color: #eeeff1;
-    color:#474fa0;
+    background-color: var(--main-color);
+    color:#eeeff1;
 }
