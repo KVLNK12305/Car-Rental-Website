@@ -356,6 +356,13 @@ header {
     padding: 10px;
     font-size: 21px;
 }
+
+.social .bx:hover,
+.social .bx .bxl-facebook,
+.social .bx .bxl-twitter,
+.social .bx .bxl-instagram{
+    color: #fe5b3d;
+}
 /*ride*/
 .ride-container{
     display: grid;
