@@ -30,3 +30,17 @@ sr.reveal('.services-container .box',{delay:600,origin:'top'})
 sr.reveal('.about-container .box',{delay:600,origin:'top'})
 sr.reveal('.reviews-container',{delay:600,origin:'top'})
 sr.reveal('.newsletter .box',{delay:400,origin:'bottom'})
+
+/* Making responsive */
+let menu=document.querySelector('#menu-icon');
+let navbar=document.querySelector('.navbar');
+
+menu.onclick=()=>{
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
+
+window.onscroll=()=>{
+    menu.classList.remove( 'bx-x' );
+    navbar.classList.remove('active');
+}
