@@ -13,10 +13,10 @@
 }
 
 :root {
-    --main-color: #fe5b3d;
-    --second-color: #ffac38;
+    --main-color: #179cef;
+    --second-color: #38eeff;
     --text-color: #444;
-    --gradient: linear-gradient(to top right, #fe5b3d, #ffac38);
+    --gradient: linear-gradient(to top right, #179cef, #38eeff);
 }
 
 /* Custom Scroll Bar */
