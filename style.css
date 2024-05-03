@@ -51,7 +51,7 @@ header {
 
 /* width of logo on top left */
 .logo img {
-    width: 40px;
+    width: 100px;
 }
 
 
@@ -115,7 +115,7 @@ header {
     width: 100%;
     min-height: 100vh;
     position: relative;
-    background: url(img/Car\ Website\ ΓÇô\ 1@2x.png);
+    background: url(wallpaperflare.com_wallpaper.jpg);
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
