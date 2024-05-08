@@ -452,6 +452,7 @@ header {
 .social .bx .bxl-instagram{
     color: #fe5b3d;
 }
+
 /*ride*/
 .ride-container{
     display: grid;
@@ -495,14 +496,14 @@ header {
 }
 
 @media screen and (max-width : 1000px){
-    .navbar:not(:has(.active)){
+    .navbar{
         display: none;
     }
     #menu-icon{
         display: block;
     }
     .home{
-        background: none;
+        background-size: contain;
         margin-top: -120px;
     }
     .home h1{
@@ -510,19 +511,6 @@ header {
     }
     .form-container form{
         background: rgb(100, 100, 100);
-    }
-    header .active{
-        top: 100%;
-        position: absolute;
-        top: -500px;
-        left: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        background: var(--primary-color);
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-        text-align: left;
-        z-index: 1003;
     }
 }
 
@@ -628,3 +616,41 @@ header {
     box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.2);
     padding: 20px 15px;
 }
+
+/*Dropdown*/
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    color: var(--main-color);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+
+  .show{display: block;}
