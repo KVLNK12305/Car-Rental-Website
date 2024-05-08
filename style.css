@@ -11,13 +11,21 @@
     text-decoration: none;
     font-family: "Poppins", sans-serif; /* Setting font-family for whole document */
 }
+body{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
 
+.dark-theme{
+    --primary-color: black;
+    --secondary-color: white;
+}
 :root {
     --main-color: #179cef;
     --second-color: #38eeff;
     --text-color: #444;
     --gradient: linear-gradient(to top right, #179cef, #38eeff);
-    --primary-color: white;
+     --primary-color: white;
     --secondary-color: black;
 }
 
@@ -48,7 +56,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #eeeff1;
+    background: var(--primary-color);
     padding: 15px 100px;
 }
 
@@ -73,7 +81,7 @@ header {
 .navbar a {
     font-size: 1rem;
     padding: 10px 20px;
-    color: var(--text-color);
+    color: var(--secondary-color);
     font-weight: 500;
 }
 /* transition of underlining the hovered element of the menu */
@@ -102,7 +110,7 @@ header {
 /* Font-color, weight and padding for anchor tags of Sign-in and Sign-up */
 .header-btn a {
     padding: 10px 20px;
-    color: var(--text-color);
+    color: var(--secondary-color);
     font-weight: 500;
 }
 
@@ -151,10 +159,11 @@ header {
     margin: 20px auto;
     width: 80%;
     border-radius: 25px;
-    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 4px 41px var(--secondary-color);
+    color:var(--secondary-color)
 }
 .form-container form {
-    color: black;
+    color: var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -168,7 +177,7 @@ header {
 
 .form-container a{
     padding: 10px 20px;
-    color: var(--primary-color);
+    color: white;
     font-weight: 500;
     background: #474fa0;
     border-radius: 0.5rem;
@@ -178,17 +187,20 @@ header {
     flex: 1 1 7rem;
     display: flex;
     flex-direction: column;
+    color: var(--secondary-color);
 }
 
 .input-box span {
     font-weight: 500;
+    color: var(--secondary-color);
 }
 
 .input-box input {
     padding: 7px;
     outline: none;
     border: none;
-    background: #eeeff1;
+    background:var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 0.5rem;
     font-size: 1rem;
 }
@@ -199,7 +211,7 @@ header {
     border: none;
     border-radius: 0.5rem;
     background: #474fa0;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 1rem;
     font-weight: 500;
 }
@@ -236,7 +248,7 @@ header {
 }
 
 .services-container .box:hover{
-    border: 1px solid black;
+    border: 1px solid var(--secondary-color);
 }
 
 .services-container .box .box-img {
@@ -254,7 +266,7 @@ header {
 
 .services-container .box p {
     padding: 0 10px;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--secondary-color);
     width: 58px;
     border-radius: 0.5rem;
     margin: 1rem 0 1rem;
@@ -274,7 +286,7 @@ header {
 .services-container .box h2 span {
     font-size: 0.8rem;
     font-weight: 500;
-    color: var(--text-color);
+    color: var(--secondary-color);
 }
 
 .services-container .box .btn {
@@ -534,7 +546,7 @@ header {
 }
 .car-info h3{
     padding: 0 10px;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--secondary-color);
     width: 58px;
     border-radius: 0.5rem;
     margin: -10px auto 20px -5px;

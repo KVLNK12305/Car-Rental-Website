@@ -38,7 +38,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#reviews">Reviews</a></li>
         </ul>
-        <img src="img/moon.png" id="icon">
+        <img src="img/moon.png" id="icon" alt="Dark Mode Toggle">
 
         <!-- Sign-in and Sign-up buttons -->
         <div class="header-btn">
@@ -341,7 +341,19 @@
 
     <!-- ScollReveal Animation -->
     <script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    var icon = document.getElementById("icon");
+icon.onclick = function(){
+  document.body.classList.toggle("dark-theme");
+  if(document.body.classList.contains("dark-theme")){
+    icon.src="img/sun.png";
+  }
+  else{
+    icon.src = "img/moon.png";
+  }
 
+}
+</script>
 
     <!-- Link to JS -->
     <script src="main.js"></script>
