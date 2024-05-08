@@ -263,7 +263,7 @@
         </div>
         <div class="about-container">
             <div class="about-img">
-                <img src="image_prev_ui.png" alt="about">
+                <img src="img/image_prev_ui.png" alt="about">
             </div>
             <div class="about-text">
                 <span>About Us</span>
@@ -341,19 +341,18 @@
 
     <!-- ScollReveal Animation -->
     <script src="https://unpkg.com/scrollreveal"></script>
-<script>
-    var icon = document.getElementById("icon");
-icon.onclick = function(){
-  document.body.classList.toggle("dark-theme");
-  if(document.body.classList.contains("dark-theme")){
-    icon.src="img/sun.png";
-  }
-  else{
-    icon.src = "img/moon.png";
-  }
-
-}
-</script>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src="img/sun.png";
+            }
+            else{
+                icon.src = "img/moon.png";
+            }
+        }
+    </script>
 
     <!-- Link to JS -->
     <script src="main.js"></script>

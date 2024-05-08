@@ -23,15 +23,6 @@ ScollReveal().reveal('.services-container .box',{delay:600,origin:'top'});
 ScollReveal().reveal('.about-container .box',{delay:600,origin:'top'});
 ScollReveal().reveal('.reviews-container',{delay:600,origin:'top'});
 
-// /* Making responsive */
-// let menu=document.querySelector('#menu-icon');
-// let navbar=document.querySelector('.navbar');
-
-// menu.onclick=()=>{
-//     menu.classList.toggle('bx-x');
-//     navbar.classList.toggle('active');
-// }
-
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myDropdown() {
