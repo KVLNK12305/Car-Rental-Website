@@ -19,6 +19,7 @@ body{
 .dark-theme{
     --primary-color: black;
     --secondary-color: white;
+    --shadow-color: rgba(255,255,255,0.2);
 }
 .dark-theme input{
     color-scheme: dark;
@@ -30,6 +31,7 @@ body{
     --gradient: linear-gradient(to top right, #179cef, #38eeff);
      --primary-color: white;
     --secondary-color: black;
+    --shadow-color: rgba(0,0,0,0.1);
 }
 
 /* Custom Scroll Bar */
@@ -162,7 +164,7 @@ header {
     margin: 20px auto;
     width: 80%;
     border-radius: 25px;
-    box-shadow: 1px 4px 41px var(--secondary-color);
+    box-shadow: 1px 4px 41px var(--shadow-color);
     color:var(--secondary-color)
 }
 .form-container form {
@@ -247,7 +249,7 @@ header {
 .services-container .box {
     padding: 10px;
     border-radius: 1rem;
-    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 4px 41px var(--shadow-color);
 }
 
 .services-container .box:hover{
@@ -414,7 +416,7 @@ header {
     align-items: center;
     text-align: center;
     padding: 20px;
-    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 4px 41px var(--shadow-color);
     border-radius: 0.5rem;
 }
 
@@ -562,7 +564,7 @@ header {
 .specs{
     margin: 10px 30px;
     border-radius: 5px;
-    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 4px 41px var(--shadow-color);
     padding: 20px 15px;
 }
 .spec-main-container{
@@ -613,7 +615,7 @@ header {
 .gallery-frame{
     margin: 10px 30px;
     border-radius: 5px;
-    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 4px 41px var(--shadow-color);
     padding: 20px 15px;
 }
 
@@ -640,7 +642,7 @@ header {
     background-color: #f1f1f1;
     min-width: 160px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px var(--shadow-color);
     z-index: 1;
   }
   
