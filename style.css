@@ -480,7 +480,7 @@ header {
 .social .bx .bxl-facebook,
 .social .bx .bxl-twitter,
 .social .bx .bxl-instagram{
-    color: #fe5b3d;
+    color: var(--main-color);
 }
 
 /*ride*/
