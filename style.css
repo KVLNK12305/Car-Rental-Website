@@ -605,11 +605,12 @@ header {
 .gallery{
     display: flex;
     flex-wrap: wrap; 
+    justify-content: center;
 }
 .gallery img{
-    width: 400px;
-    flex: 20%;
-    padding: 5px;
+    width: 470px;
+    flex: auto;
+    padding: 5px 10px;
     border-radius: 25px; 
 }
 .gallery-frame{
