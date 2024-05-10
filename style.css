@@ -17,31 +17,37 @@ body{
 }
 
 .dark-theme{
+    --main-color: #3ED625;
+    --gradient: linear-gradient(to top right, #3ED625, #80fdaa);;
     --primary-color: black;
     --secondary-color: white;
     --shadow-color: rgba(255,255,255,0.2);
+    --hover-color: #80fdaa;
 }
 .dark-theme input{
     color-scheme: dark;
 }
+
 :root {
-    --main-color: #179cef;
+    --main-color: navy;
     --second-color: #38eeff;
     --text-color: #444;
-    --gradient: linear-gradient(to top right, #179cef, #38eeff);
+    --gradient: linear-gradient(to top right, navy, #5fe1f0);
      --primary-color: white;
     --secondary-color: black;
     --shadow-color: rgba(0,0,0,0.2);
+    --accent-color: #FFDD43;
+    --hover-color: #179cef;
 }
 
 /* Custom Scroll Bar */
-html::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 0.5rem;
 }
-html::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     background: transparent;
 }
-html::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background: var(--main-color);
     border-radius: 5rem;
 }
@@ -121,14 +127,14 @@ header {
 
 /* Background, font color, and border radius for sign-in button */
 .header-btn .sign-in {
-    background: #474fa0;
+    background: var(--main-color);
     color: var(--primary-color);
     border-radius: 0.5rem;
 }
 
 /* Change color of sign-in button on hovering over it */
 .header-btn .sign-in:hover {
-    background: var(--main-color);
+    background: var(--hover-color);
 }
 
 /* home section */
@@ -141,6 +147,8 @@ header {
     background-size: cover;
     align-items: center;
 }
+
+
 
 .text{
     background-color: rgba(0,0,0,0.5);
@@ -160,12 +168,36 @@ header {
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
-.text a{
+.text .btn{
+    position: relative;
     color: burlywood;
     font-size: 20px;
     border: 2px solid burlywood;
     padding: 10px;
-    
+}
+.btn-background-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.btn:hover{
+    color: navy;
+}
+.btn-background-slide:hover::before,
+.btn-background-slide:focus::before{
+    transform: scaleX(1);
+}
+.btn-background-slide {
+    z-index: 1;
 }
 
 
@@ -194,8 +226,12 @@ header {
     padding: 10px 20px;
     color: white;
     font-weight: 500;
-    background: #474fa0;
+    background: var(--main-color);
     border-radius: 0.5rem;
+}
+
+.form-container a:hover{
+    background: var(--hover-color);
 }
 
 .input-box {
@@ -225,7 +261,7 @@ header {
     padding: 10px 34px;
     border: none;
     border-radius: 0.5rem;
-    background: #474fa0;
+    background: var(--main-color);
     color: var(--secondary-color);
     font-size: 1rem;
     font-weight: 500;
@@ -307,14 +343,14 @@ header {
 .services-container .box .btn {
     display: flex;
     justify-content: center;
-    background: #474fa0;
+    background: var(--main-color);
     color: var(--primary-color);
     padding: 10px;
     border-radius: 0.5rem;
 }
 
 .services-container .box .btn:hover {
-    background: var(--main-color);
+    background: var(--hover-color);
 }
 
 /* About Section */
@@ -343,7 +379,7 @@ header {
 
 .about-text .btn {
     padding: 10px 20px;
-    background: #474fa0;
+    background: var(--main-color);
     color: #fff;
     border-radius: 0.5rem;
 }
@@ -619,7 +655,7 @@ header {
 .car-info #rent .btn{
     display: flex;
     justify-content: center;
-    background: #474fa0;
+    background: var(--main-color);
     color: var(--primary-color);
     padding: 10px 100px;
     border-radius: 0.5rem;

@@ -52,8 +52,8 @@
     <section class="home" id="home">
         <div class="text">
             <h1>Explore the world in <br>comfort and style.</h1>
-            <a href="#ourServices">Discover More</a>
-        </div>
+            <a href="#ourServices" class="btn btn-background-slide">Discover More</a>
+        </div> 
     </section>
 
 
@@ -264,7 +264,7 @@
         </div>
         <div class="about-container">
             <div class="about-img">
-                <img src="img/image_prev_ui.png" alt="about">
+                <img src="img/image_prev_ui.png" alt="about" id="abt-img">
             </div>
             <div class="about-text">
                 <span>About Us</span>
@@ -350,9 +350,11 @@
             document.body.classList.toggle("dark-theme");
             if(document.body.classList.contains("dark-theme")){
                 icon.src="img/sun.png";
+                document.getElementById("abt-img").src = "img/avendator-removebg-preview.webp"
             }
             else{
                 icon.src = "img/moon.png";
+                document.getElementById("abt-img").src = "img/image_prev_ui.png"
             }
         }
     </script>
