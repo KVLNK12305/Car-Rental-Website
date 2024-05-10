@@ -22,7 +22,7 @@ body{
     --primary-color: black;
     --secondary-color: white;
     --shadow-color: rgba(255,255,255,0.2);
-    --hover-color: #80fdaa;
+    --hover-color: #6cf371;
 }
 .dark-theme input{
     color-scheme: dark;
@@ -224,7 +224,7 @@ header {
 
 .form-container a{
     padding: 10px 20px;
-    color: white;
+    color: var(--primary-color);
     font-weight: 500;
     background: var(--main-color);
     border-radius: 0.5rem;
@@ -254,21 +254,6 @@ header {
     color: var(--secondary-color);
     border-radius: 0.5rem;
     font-size: 1rem;
-}
-
-.form-container form .btn {
-    flex: 1 1 7rem;
-    padding: 10px 34px;
-    border: none;
-    border-radius: 0.5rem;
-    background: var(--main-color);
-    color: var(--secondary-color);
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.form-container form .btn:hover {
-    background: var(--main-color);
 }
 
 .heading {
@@ -385,7 +370,7 @@ header {
 }
 
 .about-text .btn:hover {
-    background: var(--main-color);
+    background: var(--hover-color);
 }
 
 

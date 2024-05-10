@@ -14,17 +14,8 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message))
 
-// ScollReveal Animation
-ScollReveal().reveal('.text',{delay:200,origin:'top'});
-ScollReveal().reveal('.form-container form',{delay:800,origin:'left'});
-ScollReveal().reveal('.heading',{delay:800,origin:'top'});
-ScollReveal().reveal('.ride-container .box',{delay:600,origin:'top'});
-ScollReveal().reveal('.services-container .box',{delay:600,origin:'top'});
-ScollReveal().reveal('.about-container .box',{delay:600,origin:'top'});
-ScollReveal().reveal('.reviews-container',{delay:600,origin:'top'});
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+    /* Dropdown for smaller width */
+// When the user clicks on the button, toggle between hiding and showing the dropdown content 
 function myDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
