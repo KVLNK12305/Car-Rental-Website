@@ -185,7 +185,7 @@ header {
     z-index: -1;
     background-color: var(--accent-color);
 
-    transition: transform 300ms ease-in-out;
+    transition: transform 900ms ease-in-out;
     transform: scaleX(0);
     transform-origin: left;
 }
@@ -384,14 +384,16 @@ header {
 }
 .service-img img{
     width: 400px;
+    border-radius: 10px;
     filter: blur(1px);
-    transition: transform 0.2s;
+    transition: transform 0.8s;
 }
 .service-img-even img{
     width: 400px;
+    border-radius: 10px;
     margin-left: 0;
     filter: blur(1px);
-    transition: transform 0.2s;
+    transition: transform 0.8s;
 }
 .service-img img:hover{
     transform: scale(1.2);

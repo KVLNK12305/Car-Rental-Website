@@ -46,6 +46,7 @@ input{
 }
 input:focus{
     outline: none;
+    border-bottom: 2px solid gold;
 }
 label{
     color: #757575;
