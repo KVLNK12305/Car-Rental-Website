@@ -23,6 +23,7 @@ body{
     --secondary-color: white;
     --shadow-color: rgba(255,255,255,0.2);
     --hover-color: #6cf371;
+    --nav-color: rgb(40,40,40);
 }
 .dark-theme input{
     color-scheme: dark;
@@ -38,8 +39,7 @@ body{
     --shadow-color: rgba(0,0,0,0.2);
     --accent-color: #FFDD43;
     --hover-color: #179cef;
-    --nav-pcolor:white;
-    --nav-seccolor:black;
+    --nav-color: rgb(200,200,200);
 }
 
 /* Custom Scroll Bar */
@@ -75,16 +75,10 @@ header {
     color: var(--primary-color);
 }
 header.scrolled{
-    background-color: var(--primary-color);
-}
-header.scrolled navbar{
-    color: var(--nav-pcolor);
+    background-color: var(--nav-color);
 }
 header.dark-theme.scrolled{
     background-color: var(--secondary-color);
-}
-header.dark-theme.scrolled navbar{
-    color: var(--secondary-color);
 }
 
 /*dark mode*/
@@ -104,6 +98,12 @@ header.dark-theme.scrolled navbar{
 }
 .navbar li {
     position: relative;
+}
+header:not(.scrolled) .navbar a{
+    color: white;
+}
+header:not(.scrolled) .sign-up{
+    color: white;
 }
 .navbar a {
     font-size: 1rem;
@@ -144,8 +144,11 @@ header.dark-theme.scrolled navbar{
 /* Background, font color, and border radius for sign-in button */
 .header-btn .sign-in {
     background: var(--main-color);
-    color: var(--secondary-color);
+    color: white;
     border-radius: 0.5rem;
+}
+.dark-theme .sign-in{
+    color: black;
 }
 
 /* Change color of sign-in button on hovering over it */
