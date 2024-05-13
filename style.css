@@ -38,6 +38,8 @@ body{
     --shadow-color: rgba(0,0,0,0.2);
     --accent-color: #FFDD43;
     --hover-color: #179cef;
+    --nav-pcolor:white;
+    --nav-seccolor:black;
 }
 
 /* Custom Scroll Bar */
@@ -67,8 +69,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--primary-color);
+    background: none;
     padding: 15px 100px;
+    transition: background-color 0.4s ease-in-out;
+    color: var(--primary-color);
+}
+header.scrolled{
+    background-color: var(--primary-color);
+}
+header.scrolled navbar{
+    color: var(--nav-pcolor);
+}
+header.dark-theme.scrolled{
+    background-color: var(--secondary-color);
+}
+header.dark-theme.scrolled navbar{
+    color: var(--secondary-color);
 }
 
 /*dark mode*/
@@ -128,7 +144,7 @@ header {
 /* Background, font color, and border radius for sign-in button */
 .header-btn .sign-in {
     background: var(--main-color);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 0.5rem;
 }
 
