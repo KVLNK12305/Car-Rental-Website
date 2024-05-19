@@ -423,11 +423,12 @@ header:not(.scrolled) .sign-up{
     filter: blur(0px);
 }
 .service-text h1{
-    margin-top: -20px;
-    margin-left: 40px;
+    margin-top: -60px;
+    margin-left: 60px;
     font-size: 40px;
 }
 .service-text-even h1{
+    margin-top: -60px;
     margin-left: 40px;
     font-size: 40px;
 }
@@ -442,18 +443,18 @@ header:not(.scrolled) .sign-up{
     z-index: 10;
     position: relative;
     color: #ffac38;
-    padding-left: 675px;
+    padding-left: 875px;
     padding-right: 0;
     margin-right: -90px;
     font-size: 80px;
     font-weight: 500;
 }
 .service-text p{
-    margin-left: 150px;
+    margin-left: 65px;
     font-size: 15px;
 }
 .service-text-even p{
-    padding-left: 120px;
+    padding-left: 45px;
     padding-right: 50px;
 }
 
