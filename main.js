@@ -1,6 +1,6 @@
 const scriptURL = ''
 const form = document.forms['submit-to-google-sheet']
-const mg = document.getElementById('mg')
+const mg = document.getElementById('send')
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})

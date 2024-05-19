@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <form action="">
-        <p><input type="text"></p>
-        <p><input type="image" src="" alt=""></p>
-        <p><input type="text"></p>
-    </form>
+        <div class="container">
+            <h1>Data Collection form</h1>
+            <div class="input">
+                <form action="">
+                <p>Name:<input type="text" id="name" placeholder="Enter your name" required></p>
+                <p>Mobile Number: <input type="number" id="number" required placeholder="National code is must">
+                <sub>like +91,+911,etc</sub></p>
+                <p>License:<input type="file" id="img" required maxlength="16"></p>
+                <p>License ID:  <input type="text" id="license" required maxlength="16"></p>
+                <p>Nationality Proof:<input type="file" id="pii" required></p>
+                <button type="submit" id="send">Submit</button>
+                </form>
+            </div>
+        </div>
+    <script>
+    const name = document.getElementById('name');
+    const number = document.getElementById('number');
+    const License_ID = document.getElementById('License ID');
+    </script>
 </body>
 </html>

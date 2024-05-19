@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right,white,navy);
+    margin: auto;
+    display:flex;
+    justify-content: center;
+}
+.container{
+    background-color: white;
+    color: navy;
+    width:400px;
+    margin-top: 200px;
+    border-radius: 10px;
+    padding: 25px;
+    transition: ease-in-out 1s;
+    transition-delay: 0.2s;
+}
+h1{
+    text-align: center;
+}
+#send{
+    font-size: 17px;
+    padding: 8px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: navy;
+    color: white;
+    cursor: pointer;
+    transition: 0.9s;
+}
+#send:hover{
+    color: navy;
+    background-color: white;
+}
+input:valid{
+    border-color: green;
+}
+input::file-selector-button{
+    background-color: navy;
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 15px;
+    cursor: pointer;
+}
+input::file-selector-button:hover{
+    background-color: white;
+    color:navy;
+    cursor: pointer;
+}
