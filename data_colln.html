@@ -11,10 +11,10 @@
         <h1>Data Collection Form</h1>
         <div class="input">
             <form id="form_">
-                <p>Name:<input type="text" id="name" placeholder="Enter your name" required></p>
-                <p>Mobile Number: <input type="text" id="no" required placeholder="National code is a must"><sub>like +91, +911, etc.</sub></p>
+                <p>Name:<input type="text" name="Name" id="name" placeholder="Enter your name" required></p>
+                <p>Mobile Number: <input type="text" name="Mobile Number" id="no" required placeholder="National code is a must"><sub>like +91, +911, etc.</sub></p>
                 <p>License:<input type="file" id="img" required></p>
-                <p>License ID: <input type="text" id="license" required maxlength="16"></p>
+                <p>License ID: <input type="text" name="License" id="license" required maxlength="16"></p>
                 <p>Nationality Proof:<input type="file" id="pii" required></p>
                 <button type="submit" id="send" onclick="return validate()">Submit</button>
             </form>
