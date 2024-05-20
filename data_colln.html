@@ -7,24 +7,55 @@
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-        <div class="container">
-            <h1>Data Collection form</h1>
-            <div class="input">
-                <form action="">
+    <div class="container">
+        <h1>Data Collection Form</h1>
+        <div class="input">
+            <form id="form_">
                 <p>Name:<input type="text" id="name" placeholder="Enter your name" required></p>
-                <p>Mobile Number: <input type="number" id="number" required placeholder="National code is must">
-                <sub>like +91,+911,etc</sub></p>
-                <p>License:<input type="file" id="img" required maxlength="16"></p>
-                <p>License ID:  <input type="text" id="license" required maxlength="16"></p>
+                <p>Mobile Number: <input type="text" id="no" required placeholder="National code is a must"><sub>like +91, +911, etc.</sub></p>
+                <p>License:<input type="file" id="img" required></p>
+                <p>License ID: <input type="text" id="license" required maxlength="16"></p>
                 <p>Nationality Proof:<input type="file" id="pii" required></p>
-                <button type="submit" id="send">Submit</button>
-                </form>
-            </div>
+                <button type="submit" id="send" onclick="return validate()">Submit</button>
+            </form>
         </div>
+    </div>
     <script>
-    const name = document.getElementById('name');
-    const number = document.getElementById('number');
-    const License_ID = document.getElementById('License ID');
+        function validate() {
+            const name = document.getElementById('name');
+            const number = document.getElementById('no');
+            const licenseID = document.getElementById('license');
+
+            if (name.value.trim() === "") {
+                alert("No blank allowed in name");
+                name.style.border = "solid 3px red";
+                return false;
+            } else {
+                name.style.border = "";
+            }
+
+            if (number.value.trim() === "") {
+                alert("No blank allowed in mobile number");
+                number.style.border = "solid 3px red";
+                return false;
+            } else {
+                number.style.border = "";
+            }
+
+            if (licenseID.value.trim() === "") {
+                alert("Invalid License ID");
+                licenseID.style.border = "solid 3px red";
+                return false;
+            } else if (licenseID.value.trim().length < 8) {
+                alert("License ID length is too short");
+                licenseID.style.border = "solid 3px red";
+                return false;
+            } else {
+                licenseID.style.border = "";
+            }
+
+            return true;
+        }
     </script>
 </body>
 </html>
