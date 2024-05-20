@@ -3,18 +3,30 @@ body{
     background-image: linear-gradient(to right,white,navy);
     margin: auto;
     display:flex;
+    align-items: center;
+    height: 100vh;
     justify-content: center;
 }
 .container{
     background-color: white;
     color: navy;
     width:400px;
-    margin-top: 200px;
     border-radius: 10px;
     padding: 25px;
-    transition: ease-in-out 1s;
+    transition: ease-in 1s;
     transition-delay: 0.2s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
+input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding-top: 5px;
+    border-bottom: 1px solid #757575;
+    font-size: 15px;
+}
+
 h1{
     text-align: center;
 }
@@ -28,14 +40,22 @@ h1{
     background: navy;
     color: white;
     cursor: pointer;
-    transition: 0.9s;
+    transition: 0.5s;
 }
 #send:hover{
     color: navy;
     background-color: white;
+    border: 1px solid navy;
+}
+input[type="file"] {
+    border-bottom: none; 
+}
+input:focus{
+    outline: none;
+    border-bottom: 2px solid gold;
 }
 input:valid{
-    border-color: green;
+    border-bottom: 2px solid green;
 }
 input::file-selector-button{
     background-color: navy;
@@ -44,9 +64,11 @@ input::file-selector-button{
     padding: 2px;
     font-size: 15px;
     cursor: pointer;
+    border:none;
 }
 input::file-selector-button:hover{
     background-color: white;
     color:navy;
     cursor: pointer;
+    border: 1px solid navy;
 }
