@@ -13,3 +13,11 @@ This project focuses on a car rental application that allows users to:
 * Access information about rental pricing and policies
 
 We welcome your interest in our project! Feel free to explore the codebase and let us know if you have any questions. 
+This is a beginner-friendly project, is completely based on front-end development only.
+
+# Technologies Used:
+* HTML
+* CSS
+* JS
+* Node JS
+* Electron
