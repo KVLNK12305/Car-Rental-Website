@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeRide Rentals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- Top bar -->
+    <header style="background-color: var(--nav-color);">
+        <!-- Car logo on top left -->
+        <a href="index.html" class="logo"><img src="img/image_prev_ui_1.png" alt="car logo"></a>
+
+        <!-- Menu icon for smaller devices -->
+        <div class="dropdown">
+            <div class="bx bx-menu dropbtn" id="menu-icon" onclick="myDropdown()">
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="#ride">Ride</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#reviews">Reviews</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation to various sections on the top bar -->
+        <ul class="navbar" id="navbar">
+            <li><a href="index.html" style="color: var(--secondary-color);">Home</a></li>
+            <li><a href="#ride" style="color: var(--secondary-color);">Ride</a></li>
+            <li><a href="#services" style="color: var(--secondary-color);">Services</a></li>
+            <li><a href="#about" style="color: var(--secondary-color);">About</a></li>
+            <li><a href="#reviews" style="color: var(--secondary-color);">Reviews</a></li>
+        </ul>
+
+        <!-- Dark Mode Toggle -->
+        <img src="img/moon.png" id="icon" alt="Dark Mode Toggle">
+
+        <!-- Sign-in and Sign-up buttons -->
+        <div class="header-btn">
+            <a href="login.html" class="sign-in">Sign In</a>
+        </div>
+    </header>
+    
+    <div class="car-container">
+        <div class="car-img">
+            <img src="img/car12.jpg" alt="car1" id="car">
+        </div>
+        <div class="car-info">
+            <h3>2023</h3>
+            <h2>Maserati Quattroporte</h2>
+            <div class="stars"> 
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+                <span>10 reviews</span>
+            </div>
+            <p>₹35,000 /month</p>
+            <div id="rent">
+                <a href="data_colln.html" class="btn">Rent Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="specs">
+        <h2>Maserati Quattroporte</h2>
+        <br>
+        <p>The Maserati Quattroporte exudes luxury and sophistication, combining Italian craftsmanship with exhilarating performance. Its sleek design, refined interior, and powerful engine options make it the epitome of prestige and style, offering a thrilling driving experience that embodies elegance and exclusivity.</p>
+    </div>
+    <div class="specs">
+        <h2>Maserati Quattroporte Specs & Feautures</h2>
+        <div class="spec-main-container">
+            <div class="spec-container">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACw0lEQVR4nO2Yv2sUQRTHxx+x8kdpZSFYaeeJQm5ezkIQAoIgh3fzNohBoqCgiKJCNLG2SBVQCwv/AWsVFI2Cop3YWSmChViIhULePJnsXbLsj7v9MXO7B/uFqXZn5n3mzbx5b4SoVatWrTwilC80AudphLAiqqK8EP0mqqK8BtUgrpRm/5OSbyu/tQhhZZiRibBKvhZVVhKIGDfpGmTE4lZr66qSC4Twveg9oqNB4hchPOR2a7tzEEJ4YBtARwPBfacQjHC9N9Ff7k5NWx9fyUZv/J+2x96YxINTpIAIQbOSM67m0S6jHM9MHiIl/5gJWMG8cCjtCoQ92Esof/guh0fCsXQAhBDexF6kpOSzQemEiUiEsEhKfov57znPNSbSGMPYPBo1AJ5kBdFJWcOwdIIU3I2PIvCO28d2pV1VUvAy1P83n4Y9eUFE+NuwW7fvCe7KjsipOG8wwpW0/bUNEBsHLeINhI/cbm8ZKxAOeYNQrpq7IcsYOkUm7RwkejbkUtHSgFC+Sg2StAIFvfGVZyd3CIvSSSBJhZENb7AnTwrL0kkgiT9aiFSREI7wuPIgFPJGDMQXxsM7nYFQwsNA0Qm50zwQgPhncrW0fSmUlgRr+5Ec9pAxi+tnRcG1sQu/fZGCz73VfMoLYrPIIF2FCzG4rUzGzJ0juzP1nWtM+AsAVDrIWvZsiq8uHM/alxXM9zz5qfSk0WwrQnkvMwTKq31vcLd5Imhf5MzkTuNRvk+TxpttRQo+cHv/tmwQU5d7EU4zwrlBF/ZayhL7IRDeihZWZlXZa+3LBKHgogHw3wLggnClLKUuIxzMNDbC+XUIDy4VNraMxwf25FlzHvwx5Q0bY478OYgRzmxAwC17Vo7ogY6F2GQOsym4tF8C3xRliRQsD0oQ0zZGuC3KlIlsjPJO3kdsPxNuzpYKUatWrVpilPoPClqVvGV3qWsAAAAASUVORK5CYII=" style="height: 30px;">
+                <span class="spec-type">Engine</span><span class="spec-val">3799 cc</span>
+            </div>
+            <div class="spec-container">
+                <img src="img/gear.png" alt="transmission" style="height: 30px;">
+                <span class="spec-type">Transmission</span><span class="spec-val">Automatic</span>
+            </div>
+            <div class="spec-container">
+                <img src="img/fuel.png" alt="fuel" style="height: 30px;">
+                <span class="spec-type">Fuel</span><span class="spec-val">Petrol</span>
+            </div>
+            <div class="spec-container">
+                <img src="img/seat.png" alt="seating" style="height: 30px;">
+                <span class="spec-type">Seating Capacity</span><span class="spec-val">5</span>
+            </div>
+            <div class="spec-container">
+                <img src="img/fuel.png" alt="fuel" style="height: 30px;">
+                <span class="spec-type">FuelTank Capacity</span><span class="spec-val">80 Litres</span>
+            </div>
+            <div class="spec-container">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACP0lEQVR4nNWZT4hOYRTGD0KKpCkrG2LDchLjnvN9aiw+rCxu5p5zp7CwsCQLpaxsFBsLO9mxspGNooTyZ2OtTCaxYSH5kzjz6IqaPjPfvW/RnPdXd/89nd973qf3I/qP4Bwtd+P7cyZo+1z5K7TYTxFB1TvQJcSfD8YVRcSNb3cN4SZvUG5fRdGA8hZX8c7TUDlDEXHlC52nofIZ05NjFA2Uu9e48vvuQfgyRQQqRxKm4aj7Wykirvw0IchNigistzNp5VYFU0Rc+VrCNJ5RRDA9Odbc0Akr9zBFBCanEzbVaxwfX0nRwK9eJS8T6shJighMDiacjY8o962n7HuVykWKCBJ6lRv/QC2bKfteZXyDIoLEXoWad1H2vcrkAUXFjZ+kVJIW7e5l0as6bLPn4XtVhxAO5SJ8rwp7tyChV7WH4BmU/bVLEsSNX/ybAy5zsGLvkoRo6Prw1mFTXaHIuMmlDudiFsf2rKOogGiZm7xqC4KaBxQZVL2JDtO4StHxFq1c+S2UN1Bk0EErWHGIooMWrdzkOuWAj9DKjd+hnthI0UGLVqh4inIAI7Ryk1uUC76IVm78AdbfRDmAEVqh5qOUC1hEK1e+24SknLVy5U/NUxHlAhqtVGb/vvj4BOUEFtDKlR8178GUEz6klZt8QdXbRjmBBbSC9k5RbmBIK1d5jLJcQbnh87Ryk2+YKnZQbmBIK6icpRzBPK2aV8KQf6WlaOXG36E8TrniyjO/p3GecsaV77jJQwwGq5f6t/wEq69beZ+rUEYAAAAASUVORK5CYII=" style="height: 30px;">
+                <span class="spec-type">Max Power</span><span class="spec-val">650Nm@2000-4000rpm</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="gallery-frame">
+        <h2 style="margin-left: 10px;">Car Gallery</h2>
+        <div class="gallery">
+            <div class="img">
+                <img src="img/mas4.jpeg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/mas2.jpeg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/mas3.jpeg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/mas1.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Dark Mode toggling -->
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src="img/sun.png";
+            }
+            else{
+                icon.src = "img/moon.png";
+            }
+        }
+    </script>
+</body>
+</html>
