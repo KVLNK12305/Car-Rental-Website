@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeRide Rentals</title>
+    <link rel="shortcut icon" href="img/WhatsApp Image 2024-05-18 at 18.41.44_13e52bc8.png" type="image/x-icon">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <!-- Top bar -->
+    <header>
+        <!-- Car logo on top left -->
+        <img src="img/image_prev_ui_1.png" alt="car logo" class="logo">
+
+        <!-- Menu icon for smaller devices -->
+        <div class="dropdown">
+            <div class="bx bx-menu dropbtn" id="menu-icon" onclick="myDropdown()">
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Home</a>
+                    <a href="#services">Ride</a>
+                    <a href="#ourServices">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#reviews">Reviews</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation to various sections on the top bar -->
+        <ul class="navbar" id="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Ride</a></li>
+            <li><a href="#ourServices">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <img src="img/moon.png" id="icon" alt="Dark Mode Toggle">
+
+        <!-- Sign-in and Sign-up buttons -->
+        <div class="header-btn">
+            <a href="login.html" class="sign-in">Sign In</a>
+        </div>
+    </header>
+
+
+    <!--Home Section-->
+    <section class="home" id="home">
+        <div class="text">
+            <h1>Explore the world in <br>comfort and style.</h1>
+            <a href="#ourServices" class="btn btn-background-slide">Discover More</a>
+        </div>
+    </section>
+
+
+    <!--location, pickup and return date-->
+    <div class="form-container">
+        <form action="">
+            <div class="input-box">
+                <span>Location</span>
+                <input type="search" name="" id="" placeholder="Search Places">
+            </div>
+            <div class="input-box">
+                <span>Pick-Up Date</span>
+                <input type="date" name="" id="">
+            </div>
+            <div class="input-box">
+                <span>Return Date</span>
+                <input type="date" name="" id="">
+            </div>
+            <a href="#services">Find a vehicle</a>
+        </form>
+    </div>
+
+
+    <!-- Services Section -->
+    <section class="ourServices" id="ourServices">
+        <div class="heading">
+            <span>Best Services</span>
+            <h1>Explore Our Top Deals <br> From Top Rated Dealers</h1>
+        </div>
+        <div class="service">
+            <div class="service-img">
+                <img src="img/service1.jpg" alt="service1">
+            </div>
+            <div class="service-text">
+                <p class="number">01</p>
+                <h1>Browse and Select Your Car</h1>
+                <p>Explore our extensive collection of luxury vehicles. Whether you're interested in an Audi R8 Spyder
+                    or a Range Rover DEFENDER 130, you'll find detailed listings with images and descriptions. Take your
+                    time to find the car that perfectly suits your needs and preferences.</p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-text-even">
+                <p class="number">02</p>
+                <h1>View Its Specs</h1>
+                <p>Once you've chosen a car, click on 'Learn More' to view detailed specifications. Review its
+                    specifications, features, and performance to ensure it meets your expectations. This helps you make
+                    an informed decision about your rental.</p>
+            </div>
+            <div class="service-img-even">
+                <img src="img/service2.jpg" alt="service2">
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-img">
+                <img src="img/servce3.jpg" alt="service3">
+            </div>
+            <div class="service-text">
+                <p class="number">03</p>
+                <h1>Click Rent Now Button</h1>
+                <p>After deciding on the perfect car, click the "Rent Now" button. This action will initiate the
+                    reservation process and guide you to the next step. It's a simple and straightforward way to start
+                    securing your desired vehicle.</p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-text-even">
+                <p class="number">04</p>
+                <h1>Fill Form for Reservation</h1>
+                <p>Fill the reservation form with your details. Provide the necessary information, including rental
+                    dates and any special requests. Submit the form, and our team will promptly process your
+                    reservation, ensuring a seamless and hassle-free experience.</p>
+            </div>
+            <div class="service-img-even">
+                <img src="img/service4.jpg" alt="service4">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Rent Section -->
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Best Services</span>
+            <h1>Explore Out Top Deals <br> From Top Rated Dealers</h1>
+        </div>
+        <div class="services-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/car1.jpg" alt="Car 1">
+                </div>
+                <p>2023</p>
+                <h3>Audi R8 Spyder</h3>
+                <h2>₹42,500 <span>/month</span></h2>
+                <a href="car1.html" class="btn">Rent Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/car2.jpg" alt="Car 2">
+                </div>
+                <p>2022</p>
+                <h3>Mercedes Maybach S-Class</h3>
+                <h2>₹45,000 <span>/month</span></h2>
+                <a href="car2.html" class="btn">Rent Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/car3.jpg" alt="Car 3">
+                </div>
+                <p>2024</p>
+                <h3>BMW M4 Coupé</h3>
+                <h2>₹37,500 <span>/month</span></h2>
+                <a href="car3.html" class="btn">Rent Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/car4.jpg" alt="Car 4">
+                </div>
+                <p>2022</p>
+                <h3>Shelby GT-H</h3>
+                <h2>₹40,000 <span>/month</span></h2>
+                <a href="car4.html" class="btn">Rent Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/car5.jpg" alt="Car 5">
+                </div>
+                <p>2024</p>
+                <h3>Range Rover DEFENDER 130</h3>
+                <h2>₹30,000 <span>/month</span></h2>
+                <a href="car5.html" class="btn">Rent Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/car6.jpg" alt="Car 6">
+                </div>
+                <p>2015</p>
+                <h3>Porsche 918 Spyder</h3>
+                <h2>₹50,000 <span>/month</span></h2>
+                <a href="car6.html" class="btn">Rent Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/car7.jpg" alt="Car 6">
+                </div>
+                <p>2024</p>
+                <h3>Toyota Land Cruiser</h3>
+                <h2>₹25,000 <span>/month</span></h2>
+                <a href="car7.html" class="btn">Rent Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/car8.jpg" alt="Car 6">
+                </div>
+                <p>2023</p>
+                <h3>Tata Safari</h3>
+                <h2>₹25,000 <span>/month</span></h2>
+                <a href="car8.html" class="btn">Rent Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/car9.jpg" alt="Car 6">
+                </div>
+                <p>2024</p>
+                <h3>Mercedes AMG G63</h3>
+                <h2>₹32,500 <span>/month</span></h2>
+                <a href="car9.html" class="btn">Rent Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/car10.jpg" alt="Car 6">
+                </div>
+                <p>2023</p>
+                <h3>Toyota Vellfire</h3>
+                <h2>₹27,500 <span>/month</span></h2>
+                <a href="car10.html" class="btn">Rent Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/car11.jpg" alt="Car 6">
+                </div>
+                <p>2024</p>
+                <h3>Ferrari SF90 Stradale</h3>
+                <h2>₹47,500 <span>/month</span></h2>
+                <a href="car11.html" class="btn">Rent Now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/car12.jpg" alt="Car 6">
+                </div>
+                <p>2023</p>
+                <h3>Maserati Quattroporte</h3>
+                <h2>₹35,000 <span>/month</span></h2>
+                <a href="car12.html" class="btn">Rent Now</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="heading">
+            <span>About Us</span>
+            <h1>Best Customer Experience</h1>
+        </div>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="img/image_prev_ui.png" alt="about" id="abt-img">
+            </div>
+            <div class="about-text">
+                <span>About Us</span>
+                <p>Welcome to LuxeRide Rentals, your premier destination for luxury car rentals. As an intermediary
+                    between verified luxury car sellers and discerning customers, we pride ourselves on offering an
+                    unparalleled selection of vehicles, from the sleek Audi R8 Spyder to the sophisticated Maserati
+                    Quattroporte, the rugged Tata Safari to the formidable Range Rover DEFENDER 130.</p>
+                <p>Our commitment to excellence ensures that every rental experience meets the highest standards of
+                    quality and satisfaction. Whether you're seeking a vehicle for a special occasion or a taste of
+                    luxury for your travels, LuxeRide Rentals provides seamless access to the world's finest
+                    automobiles. Trust us to connect you with the ultimate driving experience.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Review Section-->
+    <section class="reviews" id="reviews">
+        <div class="heading">
+            <span>Reviews</span>
+            <h1>Whats Our Customer Say</h1>
+        </div>
+        <div class="reviews-container">
+            <div class="box">
+                <div class="rev-img">
+                    <img src="img/review1.jpeg" alt="reviewer 1">
+                </div>
+                <h2>Srivatsav</h2>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>LuxeRide Rentals made my anniversary unforgettable with the Audi R8 Spyder. Outstanding service and
+                    seamless process!</p>
+            </div>
+            <div class="box">
+                <div class="rev-img">
+                    <img src="img/review2.jpeg" alt="reviewer 2">
+                </div>
+                <h2>Gautham</h2>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Rented the Range Rover DEFENDER 130 for an adventure trip. Exceptional experience, top-notch service!
+                </p>
+            </div>
+            <div class="box">
+                <div class="rev-img">
+                    <img src="img/review3.jpeg" alt="reviewer 3">
+                </div>
+                <h2>Sahasra</h2>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Luxury and convenience with LuxeRide Rentals! The Maserati Quattroporte was stunning. Highly
+                    recommended!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Copyright Part -->
+    <div class="copyright">
+        <p>&#169; LuxeRide Rentals All Right Reserved</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </div>
+
+
+    <!-- Dark Mode toggling -->
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "img/sun.png";
+                document.getElementById("abt-img").src = "img/avendator-removebg-preview.webp"
+            }
+            else {
+                icon.src = "img/moon.png";
+                document.getElementById("abt-img").src = "img/image_prev_ui.png"
+            }
+        }
+        document.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 670) { header.classList.add('scrolled'); }
+            else { header.classList.remove('scrolled'); }
+        })
+    </script>
+    <script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/912c7cae-7f40-4c4f-9415-193bbf0ebd29/webchat/v2/config.js"></script>
+    <!-- Link to JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

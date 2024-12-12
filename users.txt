@@ -1,0 +1,26 @@
+{
+  "aashiqedavalapati58@gmail.com": {
+    "email": "aashiqedavalapati58@gmail.com",
+    "password": "Aashiq@582006",
+    "firstName": "Edavalapati",
+    "lastName": "Aashiq"
+  },
+  "uid@gmail.com": {
+    "email": "uid@gmail.com",
+    "password": "Uid23560",
+    "firstName": "Eds",
+    "lastName": "Uid"
+  },
+  "uid1@gmail.com": {
+    "email": "uid1@gmail.com",
+    "password": "Uid@23560",
+    "firstName": "UID",
+    "lastName": "Student"
+  },
+  "example@gmail.com": {
+    "email": "example@gmail.com",
+    "password": "Hello@123",
+    "firstName": "Example",
+    "lastName": "Last"
+  }
+}
