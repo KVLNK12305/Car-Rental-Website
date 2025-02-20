@@ -1,4 +1,5 @@
 # Car-Rental-Website
+![image](https://github.com/user-attachments/assets/f9a56232-3e4b-4ab1-a9c8-656ab2f3d944)
 
 We are a group of computer science students working together to develop a user-friendly car rental application. We're passionate about:
 
